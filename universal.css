@@ -1,0 +1,115 @@
+/* truly universal styles ALL CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.future {
+    display:none;
+}
+
+html {
+    /* 20px font default for simple and precise rem sizing*/
+    font-size: 1.25em;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Unifont;
+    src: url(/webfonts/Unifont/unifont-17.0.03.woff) format(woff);
+    unicode-range: U+0000-00FF;
+}
+
+
+
+@font-face {
+    font-family: Unifont Upper;
+    src: url(/webfonts/Unifont/unifont_upper-17.0.03.woff) format(woff);
+    unicode-range: U+1F517-1FA90;
+}
+
+/* header */
+
+nav {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2rem;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    background-color: #3F3F3F;
+    border: #595959 outset 0.1em;
+    border-bottom: #EA60D4 solid 0.15em;
+}
+
+nav ul {
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+    width: 70%;
+    padding: .2rem .1rem 0;
+    float: left;
+}
+
+nav li {
+    display: inline-flex;
+    box-sizing: border-box;
+    height: 100%;
+    border: #767676 solid 2px;
+    border-bottom: none;
+    border-radius: .3em .3em 0 0;
+    background-color: #4C4C4C;
+}
+
+nav .current-page {
+    background-color: #595959;
+    border: #EA60D4 solid 2px;
+    border-bottom: none;
+}
+
+nav .current-page a {
+    color: #FFF;
+}
+
+nav li a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.1em 0.3em;
+    color: #C0C0C0;
+    font-family: VT323, Unifont, 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+nav li img {
+    height: 60%;
+    width: auto;
+}
+
+nav li:hover {
+    background-color: #999999;
+    cursor: pointer;
+}
+
+.X {
+    color: #C0C0C0;
+    margin-left: 0.5rem;
+}
+
+/* footer */
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: .5em;
+    background-color: #494A4D;
+}
+
+footer p {
+    color: #E3E5E8;
+    text-align: left;
+    font-family: VT323, Unifont, 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 0.75rem;
+}
