@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Moonhouse';
-    src: url(resources/webfonts/moonhouse-font/Moonhouse-yE5M.woff) format(woff);
-    src: url(resources/webfonts/moonhouse-font/Moonhouse-yE5M.ttf) format(ttf);
+    src: url(./resources/webfonts/moonhouse-font/Moonhouse-yE5M.woff) format(woff);
+    src: url(./resources/webfonts/moonhouse-font/Moonhouse-yE5M.ttf) format(ttf);
 }
 
 @font-face {
     font-family: 'Intranet';
-    src: url(resources/webfonts/intranet/IntraNet.woff) format(woff);
-    src: url(resources/webfonts/intranet/IntraNet.ttf) format(ttf);
+    src: url(./resources/webfonts/intranet/IntraNet.woff) format(woff);
+    src: url(./resources/webfonts/intranet/IntraNet.ttf) format(ttf);
 }
 
 body {
