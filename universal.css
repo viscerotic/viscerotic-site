@@ -17,21 +17,21 @@ html {
 }
 
 @font-face {
-    font-family: 'PixelArial 11';
-    src: url(./resources/webfonts/pixel_arial_11/PIXEARG_.woff2) format(woff2);
-    src: url(./resources/webfonts/pixel_arial_11/PIXEARG_.woff) format(woff);
-    src: url(./resources/webfonts/pixel_arial_11/PIXEARG_.TTF) format(ttf);
+    font-family: 'PixelArial';
+    src: url(./resources/webfonts/pixel_arial/pixel-arial.otf.woff2) format(woff2);
+    src: url(./resources/webfonts/pixel_arial/pixel-arial.woff) format(woff);
+    src: url(./resources/webfonts/pixel_arial/pixel-arial.ttf) format(ttf);
 }
 
 /* construction banner */
 
 .construction {
     display: flex;
-    align-self: center;
     width: 100%;
     height: 3rem;
     margin: 10rem 0;
-    background-image: url(./resources/deco/blinkies/under-construction.gif);
+    background-image: url(./resources/banners/construction.gif);
+    background-repeat: repeat-x;
 }
 
 /* header */
@@ -82,8 +82,10 @@ nav li a {
     align-items: center;
     padding: 0.1em 0.3em;
     color: #C0C0C0;
-    font-family: 'PixelArial 11', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-family: 'PixelArial', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: bold;
     font-size: 0.6rem;
+    letter-spacing: .05em;
     text-decoration: none;
 }
 
@@ -114,6 +116,6 @@ footer {
 footer p {
     color: #E3E5E8;
     text-align: left;
-    font-family: 'PixelArial 11', 'Segoe UI', Tahoma, Verdana, sans-serif;
-    font-size: 0.5rem;
+    font-family: 'PixelArial', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 0.7rem;
 }
