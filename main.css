@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Technodelic';
     src: url(./resources/webfonts/jiki_tourai/JikiTourai.woff2) format(woff2);
-    src: url(./resources/webfonts/good_old_dos/Good\ Old\ DOS\ 3D.woff) format(woff);
+    src: url(./resources/webfonts/stellarskies/stellarskies.woff) format(woff);
     src: url(./resources/webfonts/jiki_tourai/JikiTourai.ttf) format(ttf);
 }
 
@@ -35,7 +35,6 @@ main h1 {
     font-weight: 400;
     padding-left: 0.2rem;
     text-justify: center;
-    text-transform: uppercase;
     font-size: 2.3rem;
 }
 
