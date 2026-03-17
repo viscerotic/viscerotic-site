@@ -43,9 +43,9 @@ nav {
     position: fixed;
     top: 0px;
     z-index: 10;
-    background-color: #3F3F3F;
-    border: #595959 outset 0.1em;
-    border-bottom: #EA60D4 solid 0.15em;
+    background-color: #232323;
+    border: #3F3F3F outset 0.1em;
+    border-bottom: #F765FF solid 0.15em;
 }
 
 nav ul {
@@ -61,15 +61,15 @@ nav li {
     display: inline-flex;
     box-sizing: border-box;
     height: 100%;
-    border: #767676 outset 2px;
+    border: #3F3F3F outset 2px;
     border-bottom: none;
     border-radius: .3em .3em 0 0;
-    background-color: #4C4C4C;
+    background-color: #323232;
 }
 
 nav .current-page {
-    background-color: #595959;
-    border: #EA60D4 solid 2px;
+    background-color: #545454;
+    border: #F765FF solid 2px;
     border-bottom: none;
 }
 
@@ -95,7 +95,7 @@ nav li img {
 }
 
 nav li:hover {
-    background-color: #999999;
+    background-color: #434343;
     cursor: pointer;
 }
 

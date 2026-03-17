@@ -66,27 +66,27 @@ main a {
 }
 
 .pink {
-    color: #EC459C;
+    color: #FF6ED8;
 }
 
 .magenta {
-    color: #EA60D4;
+    color: #F765FF;
 }
 
 .purple {
-    color: #9D85FF;
+    color: #D66EFF;
 }
 
 .blue {
-    color: #58D7F3;
+    color: #00DEEE;
 }
 
 .cyan {
-    color: #4DFFD6;
+    color: #00F5BC;
 }
 
 .yellow {
-    color: #FFFE3C;
+    color: #D6D61B;
 }
 
 .darkblue {
@@ -104,7 +104,7 @@ main a {
 
 .bgbox {
     background-color: hsla(244 100 9 / 0.9);
-    border: .1rem dashed #F22272;
+    border: .1rem dashed;
     border-radius: 0.3rem;
     padding: 0.3rem;
 }
@@ -203,7 +203,11 @@ main a {
     display: flex;
     border-top: 1px solid #4DFFD6;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.status figure p {
+    display: inline-block;
 }
 /* end profile */
 
