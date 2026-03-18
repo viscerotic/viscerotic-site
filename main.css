@@ -213,46 +213,64 @@ main a {
 /* main */
 
 main {
+    height: 100vh;
     width: 98%;
     padding: 0 1% 1%;
-    align-items: center;
 }
 
 /* modular layout grids */
 
-/* 1 row 3 columns page layout*/
+/* 3 row 3 columns page layout*/
 
-.grid1x3 {
+.grid3x3 {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-areas:"secone sectwo secthree";
-    grid-template-columns: repeat(3, minmax(250px, 30%));
-    column-gap: 1%;
-    justify-content: center;
+    grid-template-areas: "gridhead gridhead gridhead"
+                        "topsecone topsectwo topsecthree"
+                        "botsecone botsectwo botsecthree";
+    grid-template-rows:  1fr 5fr 5fr;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    column-gap: 2%;
+    row-gap: 2%;
 }
 
-.secone {
-    grid-area: secone;
+.gridhead {
+    grid-area: gridhead;
 }
 
-.sectwo {
-    grid-area: sectwo;
+.topsecone {
+    grid-area: topsecone;
 }
 
-.secthree {
-    grid-area: secthree;
+.topsectwo {
+    grid-area: topsectwo;
 }
 
-/* 3 row 2 columns */
+.topsecthree {
+    grid-area: topsecthree;
+}
 
-.grid3x2 {
+.botsecone {
+    grid-area: botsecone;
+}
+
+.botsectwo {
+    grid-area: botsectwo;
+}
+
+.botsecthree {
+    grid-area: botsecthree;
+}
+
+/* 1 row 2 columns */
+
+.grid1x2 {
     display: inline-grid;
     height: 100%;
     width: 100%;
-    grid-template-areas: "header header"
-                       "left right";
-    grid-template-rows: 1fr 5fr 5fr;
+    grid-template-areas: "left right";
+    grid-template-rows: subgrid;
     grid-template-columns: 49% 49%;
     column-gap: 2%;
     row-gap: 2%;
@@ -264,33 +282,4 @@ main {
 
 .rightbox {
     grid-area: right;
-}
-
-/* 3 rows 1 column SUBGRID */
-
-.subgrid3x1 {
-    display: inline-grid;
-    height:100%;
-    width: 32%;
-    grid-template-areas: "header" 
-                        "top"
-                        "bottom";
-    grid-template-rows: 1fr 5fr 5fr;
-    grid-template-columns: subgrid;
-    column-gap: 2%;
-    row-gap: 2%;
-}
-
-header {
-    grid-area: header;
-    display: flex;
-    align-items: center;
-}
-
-.top {
-    grid-area: top;
-}
-
-.bottom {
-    grid-area: bottom;
 }
